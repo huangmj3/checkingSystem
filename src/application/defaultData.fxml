@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.DefaultDataController">
+  <children>
+    <Text fx:id="goToHomeButton" layoutX="511.0" layoutY="392.0" onMouseClicked="#goToHome" scaleX="2.25" scaleY="2.25" strokeType="OUTSIDE" strokeWidth="0.0" text="首页" />
+    <Text layoutX="122.0" layoutY="115.0" scaleX="1.0" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="计划完成销售额" />
+    <Text layoutX="145.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="基本工资" />
+    <Text layoutX="130.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="完成计划工资" />
+    <TextField id="planedSaleroom" fx:id="planedSaleroomTextField" layoutX="275.0" layoutY="96.0" prefWidth="200.0" />
+    <TextField id="basicSa" fx:id="basicSalaryTextField" layoutX="275.0" layoutY="166.0" prefWidth="200.0" />
+    <TextField fx:id="planedSalaryTextField" layoutX="275.0" layoutY="236.0" prefWidth="200.0" />
+    <Button fx:id="saveButton" layoutX="272.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#saveData" text="保存" />
+  </children>
+</AnchorPane>

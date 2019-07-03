@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.EmployeesPerformanceController">
+  <children>
+    <TableView fx:id="appealTable" editable="false" focusTraversable="true" layoutX="14.0" layoutY="0.0" prefHeight="303.0" prefWidth="572.0" tableMenuButtonVisible="true">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="姓名" fx:id="nameColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="74.0" text="排名" fx:id="rankingColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="得分" fx:id="scoreColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="销售额" fx:id="saleroomColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="新客户人数" fx:id="numberOfNewColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="115.0" text="流失客户人数" fx:id="numberOfLostColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="108.0" text="客户投诉次数" fx:id="numberOfComplainColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="客户访问次数" fx:id="numberOfVisitColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="328.0" text="申诉内容" fx:id="appealContextColumn" />
+      </columns>
+    </TableView>
+    <TextField fx:id="nameField" layoutX="13.0" layoutY="311.0" prefWidth="73.0" promptText="姓名" text="" visible="false" />
+    <TextField fx:id="scoreField" layoutX="95.0" layoutY="311.0" prefWidth="73.0" promptText="得分" visible="false" />
+    <TextField fx:id="rankingField" layoutX="179.0" layoutY="311.0" prefWidth="73.0" promptText="排名" visible="false" />
+    <TextField id="sala" fx:id="saleroomField" layoutX="264.0" layoutY="311.0" prefWidth="73.0" promptText="销售额" visible="false" />
+    <TextField fx:id="numberOfNewField" layoutX="349.0" layoutY="311.0" prefWidth="98.0" promptText="新客户人数" visible="false" />
+    <TextField fx:id="numberOfLostField" layoutX="459.0" layoutY="311.0" prefWidth="114.0" promptText="流失客户人数" visible="false" />
+    <TextField id="numberOf" fx:id="numberOfComplainField" layoutX="14.0" layoutY="368.0" prefWidth="114.0" promptText="客户投诉次数" visible="false" />
+    <TextField fx:id="numberOfVisitField" layoutX="154.0" layoutY="368.0" prefWidth="114.0" promptText="客户访问次数" text="" visible="false" />
+    <Button id="button1" fx:id="addButton" layoutX="300.0" layoutY="368.0" mnemonicParsing="false" text="增加" visible="false" />
+    <Button id="button2" fx:id="clearbutton" layoutX="484.0" layoutY="369.0" mnemonicParsing="false" text="清空" visible="false" />
+    <Button fx:id="changeButton" layoutX="147.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#changePerformance" text="修改" visible="true" />
+    <Button fx:id="rejectButton" layoutX="361.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#reject" text="驳回" visible="true" />
+    <Button fx:id="deleteButton" layoutX="391.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#deleteRow" text="删除" visible="false" />
+    <Text fx:id="performanceToHome" layoutX="536.0" layoutY="428.0" onMouseClicked="#performanceToHome" scaleX="1.587222273664293" scaleY="1.472136773376479" strokeType="OUTSIDE" strokeWidth="0.0" text="首页" />
+  </children>
+</AnchorPane>

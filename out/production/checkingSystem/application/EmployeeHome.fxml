@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.EHomeController">
+  <children>
+    <Button id="userConfi" fx:id="employeeConfirmButton" layoutX="186.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#employeeConfirm" text="确认" />
+    <Button id="userApeal" fx:id="employeeAppealButton" layoutX="338.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#employeeAppeal" text="申诉" />
+    <Pane fx:id="myInformationPage" layoutX="508.0" layoutY="303.0" onMouseClicked="#myInformation" prefHeight="91.0" prefWidth="78.0">
+      <children>
+        <ImageView fx:id="myImage" fitHeight="37.0" fitWidth="37.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@homeImage/myInformation.jpg" />
+          </image>
+        </ImageView>
+        <Label layoutX="9.0" layoutY="58.0" text="我的信息" />
+      </children>
+    </Pane>
+    <Label layoutX="111.0" layoutY="50.0" text="业绩情况：" />
+    <Label layoutX="111.0" layoutY="250.0" text="工资情况：" />
+    <Text fx:id="scoreText" layoutX="205.0" layoutY="65.0" scaleX="1.0" scaleY="0.9999947507370287" strokeType="OUTSIDE" strokeWidth="0.0" text="得分" />
+    <Text fx:id="rankingText" layoutX="300.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="排名" />
+    <Text fx:id="saleroomText" layoutX="205.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="销售额" />
+    <Text fx:id="numberOfNewText" layoutX="205.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="新客户人数" />
+    <Text fx:id="numberOfLostText" layoutX="205.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="流失客户人数" />
+    <Text fx:id="numberOfComplainText" layoutX="205.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="客户投诉次数" />
+    <Text fx:id="numberOfVisitText" layoutX="205.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="客户访问次数" />
+    <Text fx:id="totalAmountText" layoutX="205.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="总额" />
+    <Text fx:id="performanceAmountText" layoutX="300.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="绩效额" />
+    <Text fx:id="otherItemText" layoutX="205.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="（其他增减项）" />
+  </children>
+</AnchorPane>

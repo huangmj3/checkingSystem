@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.AHomeController">
+  <children>
+    <Button id="systemConfigu" fx:id="systemConfigureButton" layoutX="113.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#systemConfigure" prefHeight="34.0" prefWidth="109.0" text="系统配置" />
+    <Button fx:id="changeUserInformationButton" layoutX="339.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#changeUserInformation" prefHeight="34.0" prefWidth="141.0" text="更改用户信息" />
+    <Button id="record" fx:id="recordPerformanceButton" layoutX="97.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#recordPerformance" prefHeight="34.0" prefWidth="141.0" text="录入业绩信息" />
+    <Button id="ca" fx:id="changeDefaultDataButton" layoutX="338.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#changeDefaultData" prefHeight="34.0" prefWidth="141.00009999999747" text="更改默认数值" />
+  </children>
+</AnchorPane>

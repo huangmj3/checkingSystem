@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.LogInController">
+  <children>
+    <Label layoutX="149.0" layoutY="154.0" text="账号" />
+    <Label layoutX="149.0" layoutY="204.0" text="密码" />
+    <TextField id="" fx:id="accountField" layoutX="235.0" layoutY="151.0" prefWidth="200.0" />
+    <PasswordField id="" fx:id="passwordField" layoutX="235.0" layoutY="201.0" prefWidth="200.0" />
+    <Button fx:id="LogInButton" layoutX="260.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#logIn" prefHeight="37.0" prefWidth="81.0" text="登录" />
+    <Button id="RegisterButton" fx:id="registerButton" layoutX="343.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#goToRegister" prefHeight="37.0" prefWidth="92.0" text="注册" visible="false" />
+  </children>
+</AnchorPane>

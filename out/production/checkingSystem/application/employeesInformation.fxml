@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="informationTable" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.EmployeesInformationController">
+  <children>
+    <TableView fx:id="informationTable" editable="false" layoutX="14.0" layoutY="0.0" prefHeight="287.0" prefWidth="572.0" tableMenuButtonVisible="true">
+      <columns>
+        <TableColumn prefWidth="75.0" text="姓名" fx:id="nameColumn" />
+        <TableColumn prefWidth="75.0" text="性别" fx:id="sexColumn" />
+        <TableColumn prefWidth="75.0" text="年龄" fx:id="ageColumn" />
+        <TableColumn prefWidth="75.0" text="部门" fx:id="departmentColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="113.0" text="电话号码" fx:id="telNumberColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="162.0" text="邮箱" fx:id="emailColumn" />
+      </columns>
+    </TableView>
+    <Button fx:id="changeButton" layoutX="272.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#changeInformation" text="修改" />
+    <Text fx:id="informationToHomeButton" layoutX="531.0" layoutY="401.0" onMouseClicked="#informationToHome" scaleX="1.8250024490448726" scaleY="1.7590135453086682" strokeType="OUTSIDE" strokeWidth="0.0" text="首页" />
+  </children>
+</AnchorPane>
